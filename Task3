@@ -1,0 +1,11 @@
+// Pseudocode for parsing the 'a**' command
+if (expression == "**") {
+    return new Assignment(new Identifier("a"), new Multiplication(new Identifier("a"), new Identifier("a")));
+}
+//adding test unit
+@Test
+public void testSquareOperator() {
+    String input = "a := 5; a**;";
+    // Parse the input and verify the output
+}
+
